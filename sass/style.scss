@@ -1,0 +1,124 @@
+* {
+	font-family: 'Shantell Sans', cursive;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/bg_board.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+
+	.time {
+		position: absolute;
+		top: 10%;
+		right: 20%;
+		font-size: 30px;
+		color: white;
+	}
+	.word {
+		color: rgb(188, 185, 185);
+		font-size: 30px;
+		padding: 30px;
+	}
+
+	.ranking {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 100px;
+		font-size: 20px;
+
+		.winners {
+			font-size: 25px;
+			color: white;
+		}
+		.place_1 {
+			color: gold;
+		}
+		.place_2 {
+			color: silver;
+		}
+		.place_3 {
+			color: #cd7f32;
+		}
+	}
+	.vis {
+		display: block;
+	}
+	.inv {
+		display: none;
+	}
+	.win {
+		width: 500px;
+		height: 500px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgb(41, 40, 40);
+		border-radius: 25px;
+
+		h2 {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		.word {
+			color: chocolate;
+		}
+		.nick {
+			margin-top: 80px;
+		}
+		input {
+			margin-top: 15px;
+			width: 300px;
+			height: 30px;
+			background: none;
+			border: none;
+			outline: none;
+			border: 3px solid black;
+			border-radius: 10px;
+			text-align: center;
+			color: white;
+		}
+		button {
+			padding: 6px;
+			color: white;
+			background-color: black;
+			outline: none;
+			border: 2px solid white;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+
+	.letters {
+		padding: 30px 200px 10px 200px;
+
+		button {
+			background: none;
+			border: none;
+			color: rgb(188, 185, 185);
+			border: 2px solid rgb(105, 103, 103);
+			width: 60px;
+			height: 60px;
+			margin: 5px;
+			border-radius: 5px;
+			font-size: 30px;
+			cursor: pointer;
+			transition: all 0.3s linear;
+		}
+
+		button:hover {
+			border: 2px solid rgb(255, 255, 255);
+			color: white;
+			background-color: rgba(142, 141, 141, 0.199);
+		}
+	}
+}
